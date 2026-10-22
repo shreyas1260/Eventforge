@@ -1,8 +1,7 @@
 # EventForge AI
 
 **Product Tagline:** *Plan the event. Prepare for anything.*  
-**Challenge:** Hack2skill Challenge 5 — AI Code Submission  
-**Design System:** Warm Editorial Productivity (Newsreader & Inter, Warm Ivory `#F8F7F3`, Terracotta `#94442A`, Sage `#52634D`)
+
 
 ---
 
