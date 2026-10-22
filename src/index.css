@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --canvas: #F8F7F3;
+    --surface: #FFFFFF;
+    --primary: #94442A;
+    --primary-accent: #C66B4E;
+    --secondary-accent: #788A72;
+    --charcoal: #252722;
+    --muted: #777A72;
+    --border: #E8E6DF;
+    --surface-inset: #F3F1EB;
+  }
+
+  body {
+    background-color: var(--canvas);
+    color: var(--charcoal);
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Newsreader', serif;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbars for productivity feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F1EB;
+}
+::-webkit-scrollbar-thumb {
+  background: #DBC1BA;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C66B4E;
+}
+
+/* Print Friendly Styles */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-break-inside-avoid {
+    break-inside: avoid;
+  }
+  .print-page-break {
+    page-break-before: always;
+  }
+  header, nav, footer, button, .interactive-controls {
+    display: none !important;
+  }
+}
